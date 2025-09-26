@@ -1,0 +1,44 @@
+# Update .gitignore to include database folders
+@"
+# Virtual Environment
+rag_env/
+venv/
+env/
+.env/
+
+# Model Files  
+*.gguf
+*.ggmlv3
+*.bin
+*.pt
+*.pth
+*.h5
+*.pkl
+*.model
+
+# Database files
+*.sqlite3
+*.db
+chroma_db/
+vector_db/
+vect_db/
+*.faiss
+*.pickle
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
